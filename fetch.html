@@ -44,11 +44,12 @@
     } else {
       // http://localhost/hash.html
     }
-    fetch('web').then(function(response){
+    fetch('WEB').then(function(response){
       response.text().then(function(text){
         document.querySelector('#article').innerHTML = text;
       })
     });
+	
     fetch('list').then(function(response){
       response.text().then(function(text){
         var items = text.split(',');
